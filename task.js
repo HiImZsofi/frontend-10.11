@@ -1,5 +1,5 @@
 const numberarray = Array(20).fill().map(() => Math.floor(30 * Math.random() + 1) );
- const dividedNumbers = []
+const dividedNumbers = []
 
 //tiszta ig
 function divideArray(array){
@@ -11,7 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('divide').addEventListener('click', () => {
         console.log(divideArray(numberarray))
     })
+
+    document.getElementById('itemAdd').addEventListener('click', () => {
+        var inputNumber = parseInt(document.getElementById('itemInput').value) 
+        dividedNumbers.push(inputNumber)
+        console.log(dividedNumbers)
+    })
 })
 
-//console.log(divideArray(numberarray))
+
 
