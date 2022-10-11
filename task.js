@@ -7,7 +7,7 @@ function divideArray(array){
     return dividedNumbers
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('divide').addEventListener('click', () => {
         console.log(divideArray(numberarray))
     })
@@ -17,17 +17,25 @@ document.addEventListener('DOMContentLoaded', () => {
         dividedNumbers.push(inputNumber)
         console.log(dividedNumbers)
     })
-})
+})*/
 
 class Szazlabu{
+    #labakSzama
+
     constructor(labakSzama){
-        this.labakSzama = labakSzama
+        this.#labakSzama = labakSzama
     }
 
     toString(){
-        return this.labakSzama + " lábú százlábú"
+        return this.#labakSzama + " lábú százlábú"
     }
+
 }
+function labakbolSzazlabuk(szam) {
+    let szazlabu = new Szazlabu(szam)
+    return szazlabu
+}
+console.log(labakbolSzazlabuk(100).toString())
 
 
 
