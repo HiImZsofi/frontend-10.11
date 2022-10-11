@@ -19,5 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
+class Szazlabu{
+    constructor(labakSzama){
+        this.labakSzama = labakSzama
+    }
+
+    toString(){
+        return this.labakSzama + " lábú százlábú"
+    }
+}
+
 
 
